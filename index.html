@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <a href="/index2.html"> Test Page</a>
+    <main class="app">
+      <section class="todo-list">
+        <h3>TODO LIST</h3>
+        <div class="list" id="todo-list">
+          <div class="todo-item">
+            <p class="pre-list">Add a task to display list</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="create-todo">
+        <h3>Add Task</h3>
+        <form id="new-todo-form">
+          <h4>Whats on your to do list?</h4>
+          <input
+            type="text"
+            name="content"
+            id="content"
+            placeholder="e.g. Clean"
+          />
+          <input type="submit" value="+" class="plus" />
+        </form>
+      </section>
+    </main>
+    <script src="/server.js"></script>
+
+    <script src="/tracker.js"></script>
+  </body>
+</html>
