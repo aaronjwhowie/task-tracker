@@ -11,9 +11,9 @@ newTodoForm.addEventListener("submit", (e) => {
   };
 
   var data = fs.readFileSync("data.json");
-  var Item = JSON.parse(data);
+  var item = JSON.parse(data);
 
-  Item.push(todo);
+  item.push(todo);
   todos.push(todo);
 
   localStorage.setItem("todos", JSON.stringify(todos));

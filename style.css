@@ -1,92 +1,138 @@
 /* General Styling */
-
+* {
+  font-family: "Shadows Into Light", cursive;
+}
 body {
   height: 1000px;
+  background-color: #edecee;
 }
 
 h3 {
   display: grid;
   justify-content: center;
+  border-bottom: solid 1px black;
+  font-size: 30px;
 }
 
+h4 {
+  display: grid;
+  justify-content: center;
+  font-size: 20px;
+}
+/* Header Styling */
+.CBT {
+  display: grid;
+  justify-content: center;
+}
 /* App Styling */
 .app {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(20, 5%);
   grid-template-rows: repeat(10, 20%);
+  margin-top: -26px;
 }
 /* Input Styling */
 .create-todo {
-  border: solid black 2px;
+  border-bottom: solid black 1px;
   padding: 10px;
-  margin-top: 60px;
+  margin-top: -8px;
   display: grid;
   justify-items: center;
-  grid-area: 6/9/10/13;
   position: relative;
   height: 200px;
-  border-radius: 5px;
+  width: 1420px;
+  background-color: #c2a580;
+  justify-content: center;
+  margin-left: -8px;
 }
 
 #content {
   border: none;
   background: none;
-  font-size: 20px;
-  border: solid black 1px;
-  border-radius: 4px;
+  font-size: 33px;
   margin-left: 10px;
   margin-right: 10px;
+  background-color: rgb(225 223 226);
+  border-radius: 4px;
+  text-align: center;
 }
 
 .plus {
-  height: 50px;
-  width: 50px;
-  border: none;
-  outline: none;
-  background: none;
-  margin-top: 0px;
-  font-size: 30px;
+  display: none;
 }
 /* To Do List */
 .todo-list {
   display: grid;
-  grid-area: 2/9/3/11;
+  justify-content: center;
+  grid-area: 1/6/1/18;
   position: absolute;
+  justify-content: center;
+  align-items: center;
   margin-top: 200px;
-  margin-left: 300px;
-  border: solid 1px black;
   padding: 10px;
   width: 344px;
+  text-align: center;
+  left: 530px;
 }
 
 .todo-content {
+  display: grid;
+  grid-area: 1/4/1/5;
 }
 /* To Do Item Stylings */
+
+input {
+  border: none;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
 .pre-list {
-  font-size: 20px;
+  font-size: 30px;
   display: flex;
   justify-content: center;
   padding: none;
   margin-left: 70px;
+  display: grid;
+  grid-area: 1/2/1/10;
 }
 
 .todo-item {
-  display: flex;
+  display: grid;
   margin-bottom: 10px;
   border: solid black 1px;
-  padding: 10px;
-  width: 321px;
-  border-radius: 5px;
+  grid-template-columns: repeat(11, 9%);
+  grid-template-rows: repeat(1, 1fr);
+  width: 500px;
+  border-radius: 10px;
+  background-color: white;
+  margin-top: 10px;
 }
 
+label {
+  background-color: #c2a580;
+  height: 100px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-left: 0px;
+}
 .checkbox {
-  height: 20px;
-  width: 20px;
+  height: 40px;
+  width: 40px;
   border: none;
   background-color: black;
   outline: none;
   margin-top: 0px;
+}
+
+.actions {
+  display: grid;
+  grid-area: 1/10/1/12;
 }
 
 .edit {
@@ -97,15 +143,17 @@ h3 {
   border-radius: 4px;
   margin-left: 10px;
   margin-right: 10px;
+  height: 40px;
+  margin-top: 10px;
 }
 
 .delete {
-  color: red;
   border: none;
   background: none;
   font-size: 20px;
   border: solid black 1px;
   border-radius: 4px;
+  height: 40px;
 }
 
 /* Responsive Styling */
@@ -117,8 +165,101 @@ h3 {
 }
 
 .edit:hover {
-  color: rgb(0, 21, 255);
+  color: #c2a580;
 }
 .edit:active {
-  color: rgba(0, 21, 255, 0.696);
+  color: #c2a580;
+}
+
+/* Tablet Responsive */
+@media only screen and (max-width: 768px) {
+  * {
+    max-width: 768px;
+  }
+  .create-todo {
+    border-bottom: solid black 1px;
+    padding: 10px;
+    margin-top: -8px;
+    display: grid;
+    justify-items: center;
+    position: relative;
+    height: 200px;
+    background-color: #c2a580;
+    justify-content: center;
+    margin-left: -8px;
+    width: 768px;
+  }
+
+  .todo-list {
+    display: grid;
+    justify-content: center;
+    grid-area: 1/1/1/1;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    padding: 10px;
+    width: 0px;
+    text-align: center;
+    left: 370px;
+  }
+
+  .todo-item {
+    display: grid;
+    margin-bottom: 10px;
+    border: solid black 1px;
+    grid-template-columns: repeat(11, 9%);
+    grid-template-rows: repeat(1, 1fr);
+    width: 500px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 10px;
+  }
+}
+
+/* Mobile Responsive */
+@media only screen and (max-width: 425px) {
+  * {
+    max-width: 420px;
+  }
+  .create-todo {
+    border-bottom: solid black 1px;
+    padding: 10px;
+    margin-top: -8px;
+    display: grid;
+    justify-items: center;
+    position: relative;
+    height: 200px;
+    background-color: #c2a580;
+    justify-content: center;
+    margin-left: -8px;
+    width: 420px;
+  }
+
+  .todo-list {
+    display: grid;
+    justify-content: center;
+    grid-area: 1/1/1/1;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    padding: 10px;
+    width: 0px;
+    text-align: center;
+    left: 217px;
+  }
+
+  .todo-item {
+    display: grid;
+    margin-bottom: 10px;
+    border: solid black 1px;
+    grid-template-columns: repeat(11, 9%);
+    grid-template-rows: repeat(1, 1fr);
+    width: 400px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: -28px;
+  }
 }
