@@ -9,7 +9,6 @@ newTodoForm.addEventListener("submit", (e) => {
     content: e.target.elements.content.value,
     category: e.target.elements.content.value,
     done: false,
-    // createdAt: new Date().getTime(),
   };
 
   todos.push(todo);
@@ -81,7 +80,7 @@ function DisplayTodos() {
     edit.addEventListener("click", (e) => {
       const input = content.querySelector("input");
       input.focus();
-      input.addEventListener("blur", (e) => {
+      input.addEventListener((e) => {
         todo.content = e.target.vaue;
         localStorage.setItem("todos", JSON.stringify(todos));
         DisplayTodos();
