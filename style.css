@@ -67,6 +67,7 @@ h4 {
   border-radius: 4px;
   text-align: center;
   width: 400px;
+  box-shadow: 0px 2px 20px #0000002b;
 }
 
 .plus {
@@ -118,10 +119,11 @@ input {
   grid-template-columns: repeat(11, 9%);
   grid-template-rows: repeat(1, 1fr);
   width: 500px;
-  border-radius: 42px;
+  border-radius: 15px;
   background-color: white;
   margin-top: 20px;
-  /* box-shadow: 0px 0px 9px white; */
+  box-shadow: 0px 2px 10px #00000029;
+  color: #757575;
 }
 
 label {
@@ -154,24 +156,26 @@ label {
   border: none;
   /* background: none; */
   font-size: 20px;
-  border-bottom: solid black 1px;
+  /* border-bottom: solid black 1px; */
   border-radius: 4px;
   margin-left: 10px;
   margin-right: 10px;
   height: 40px;
   margin-top: 10px;
   color: #2875ff;
+  box-shadow: 0px 4px 8px #2875ff59;
 }
 
 .delete {
   border: none;
   /* background: none; */
   font-size: 20px;
-  border-bottom: solid black 1px;
+  /* border-bottom: solid black 1px; */
   border-radius: 4px;
   height: 40px;
   margin-top: 10px;
   color: #2875ff;
+  box-shadow: 0px 4px 8px #2875ff59;
 }
 
 /* Responsive Styling */
@@ -179,6 +183,7 @@ label {
   color: white;
   font-size: 21px;
   background-color: red;
+  box-shadow: -1px 3px 6px rgba(255, 0, 0, 0.54);
 }
 .delete:active {
   color: rgb(255, 71, 71);
@@ -236,6 +241,7 @@ label {
     border-radius: 42px;
     background-color: white;
     margin-top: 10px;
+    color: #757575;
   }
 }
 
