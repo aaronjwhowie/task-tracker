@@ -3,6 +3,7 @@ import fs from "fs";
 import express from "express";
 import axios from "axios";
 import * as dotenv from "dotenv";
+import { request } from "http";
 
 dotenv.config();
 const app = express();
@@ -22,3 +23,20 @@ app.listen(port, (err) => {
   if (err) throw err;
   console.log(`Listening on port ${port}`);
 });
+
+// JSON Data Push
+// app.use(express.static(path.join(".", "public")));
+
+const data = fs.readFileSync((".", "data.json"));
+console.log(JSON.parse(data));
+
+const parsedData = JSON.parse(data);
+
+// request.body.task;
+// const task = request.body.task;
+// parsedData.push({ task: task });
+
+// const stringifiedData = JSON.stringify(parsedData);
+// fs.writeFileSync((".", "data.json")),
+//   stringifiedData,
+//   (err = res.redirect("/"));

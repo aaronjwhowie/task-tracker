@@ -4,7 +4,11 @@
 }
 body {
   height: 1000px;
-  background-color: #edecee;
+  background: linear-gradient(
+    rgba(56, 119, 128, 1) 0%,
+    rgba(170, 183, 190, 1) 44%,
+    rgba(210, 201, 198, 1) 100%
+  );
 }
 
 h3 {
@@ -42,7 +46,6 @@ h4 {
   position: relative;
   height: 200px;
   width: 1420px;
-  background-color: #c2a580;
   justify-content: center;
   margin-left: -8px;
 }

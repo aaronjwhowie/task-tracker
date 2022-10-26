@@ -17,10 +17,10 @@ newTodoForm.addEventListener("submit", (e) => {
 
   e.target.reset();
 
-  DisplayTodos();
+  taskOperator();
 });
 
-function DisplayTodos() {
+function taskOperator() {
   const todoList = document.querySelector("#todo-list");
 
   todoList.innerHTML = ``;
@@ -74,23 +74,25 @@ function DisplayTodos() {
         todoItem.classList.remove("done");
       }
 
-      DisplayTodos();
+      taskOperator();
     });
 
     edit.addEventListener("click", (e) => {
       const input = content.querySelector("input");
+      input.removeAttribute("readonly");
       input.focus();
-      input.addEventListener((e) => {
-        todo.content = e.target.vaue;
+      input.addEventListener("blur", (e) => {
+        input.setAttribute("readonly", true);
+        todo.content = e.target.value;
         localStorage.setItem("todos", JSON.stringify(todos));
-        DisplayTodos();
+        taskOperator();
       });
     });
 
     deleteButton.addEventListener("click", (e) => {
       todos = todos.filter((t) => t != todo);
       localStorage.setItem("todos", JSON.stringify(todos));
-      DisplayTodos();
+      taskOperator();
     });
   });
 }
