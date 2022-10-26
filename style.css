@@ -11,15 +11,16 @@ body {
     rgba(210, 201, 198, 1) 100%
   ); */
 
-  background-color: rgb(54, 120, 130);
+  background-color: rgb(228 230 231);
 }
 
 h3 {
   display: grid;
   justify-content: center;
-  border-bottom: solid 1px black;
+  border-bottom: solid 1px white;
   font-size: 30px;
   color: white;
+  width: 400px;
 }
 
 h4 {
@@ -52,7 +53,8 @@ h4 {
   width: 1420px;
   justify-content: center;
   margin-left: -8px;
-  box-shadow: -1px 3px 5px white;
+  background-color: #2875ff;
+  box-shadow: -1px 3px 6px #2875ff9c;
 }
 
 #content {
@@ -150,7 +152,7 @@ label {
 
 .edit {
   border: none;
-  background: none;
+  /* background: none; */
   font-size: 20px;
   border-bottom: solid black 1px;
   border-radius: 4px;
@@ -158,30 +160,34 @@ label {
   margin-right: 10px;
   height: 40px;
   margin-top: 10px;
+  color: #2875ff;
 }
 
 .delete {
   border: none;
-  background: none;
+  /* background: none; */
   font-size: 20px;
   border-bottom: solid black 1px;
   border-radius: 4px;
   height: 40px;
   margin-top: 10px;
+  color: #2875ff;
 }
 
 /* Responsive Styling */
 .delete:hover {
-  color: rgb(255, 0, 0);
+  color: white;
   font-size: 21px;
+  background-color: red;
 }
 .delete:active {
   color: rgb(255, 71, 71);
 }
 
 .edit:hover {
-  color: #0075ff;
+  color: white;
   font-size: 21px;
+  background-color: #2875ff;
 }
 .edit:active {
   color: #0075ff;
