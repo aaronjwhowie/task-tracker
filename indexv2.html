@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>To Do List</title>
+    <title>Task Tracker Project f.V2</title>
     <link
       href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
       rel="stylesheet"
@@ -19,58 +19,40 @@
     <link rel="stylesheet" href="/style-t.css" />
     <link rel="stylesheet" href="/style-p.css" />
     <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/style-2.css" />
+
   </head>
   <body>
-    
+    <div class="nul"></div>
     <main class="app">
       <section class="task-tracker">
         <div class="list" id="task-tracker">
-          <div class="todo-item">
+          <div class="taskCard">
             <p class="pre-list">Add a task to display list</p>
           </div>
         </div>
       </section>
 
-      <section class="create-todo">
-        <h3 class="at">To Do's</h3>
+      <section class="makeTask">
+        <h3 class="at">Task List</h3>
         <form id="new-card">
           <input
             type="text"
             name="content"
             id="content"
-            placeholder="Add To Do"
+            placeholder="Add a Task"
             required
           />
 
           <input type="submit" value="+" class="plus" />
         </form>
-        <a href="/indexv2.html"> V2</a>
+        <a href="/index.html"> V1</a>
       </section>
-<div class="nul"></div>
-      <footer>
-        <span>
-          <span class="socialmedia">
-            <a href="https://www.facebook.com/" aria-label="facebook"
-              ><i class="fa-brands fa-facebook" id="facebook"></i
-            ></a>
-            <a href="https://twitter.com/?lang=en" aria-label="twitter"
-              ><i class="fa-brands fa-twitter" id="twitter"></i
-            ></a>
-            <a href="https://www.instagram.com/" aria-label="instagram"
-              ><i class="fa-brands fa-instagram" id="instagram"></i
-            ></a>
-            <a href="https://www.snapchat.com/" aria-label="snapchat"
-              ><i class="fa-brands fa-snapchat" id="snapchat"></i
-            ></a>
-        </span>
-      </footer>
+    </div>
     </main>
-    <script
-      src="https://kit.fontawesome.com/f01107a712.js"
-      crossorigin="anonymous"
-    ></script>
+  
     <script src="/server.js"></script>
 
-    <script src="/tracker.js"></script>
+    <script src="/trackerv2.js"></script>
   </body>
 </html>
